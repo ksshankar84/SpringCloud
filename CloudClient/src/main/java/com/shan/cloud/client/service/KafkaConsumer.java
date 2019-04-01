@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class KafkaConsumer {
 
-	@KafkaListener(topics = "test-topic", groupId = "group_id")
+	//@KafkaListener(topics = "test-topic", groupId = "group_id")
 	public void consume(String message) throws IOException {
 		System.out.println("Message Received - " + message);
 	}

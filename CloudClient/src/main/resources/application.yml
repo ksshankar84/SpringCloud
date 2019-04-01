@@ -1,4 +1,7 @@
 spring:
+   cloud:
+    zookeeper:
+      connect-string: localhost:2181
    kafka:
      consumer:
         bootstrap-servers: localhost:9092
